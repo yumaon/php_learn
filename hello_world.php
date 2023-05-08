@@ -1,4 +1,4 @@
 <?php
-    $greeting = "Hello world";
+    $greeting = "はじめまして。";
     echo $greeting;
 ?>
