@@ -2,5 +2,8 @@
 $input = trim(fgets(STDIN));
 $ary = explode(" ", $input);
 print_r($ary);
-echo count($ary);
+$num = count($ary);
+for ($i = 0; $i < $num; $i++) {
+  echo $ary[$i]."\n";
+}
 ?>
