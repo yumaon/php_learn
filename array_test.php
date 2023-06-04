@@ -11,6 +11,6 @@ foreach(range(1, $count) as $i) {
 }
 
 foreach($numbers as $key => $value) {
-  echo $key." ".$value."\n";
+  echo $key."  ".$value."\n";
 }
 ?>
