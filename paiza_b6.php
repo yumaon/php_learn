@@ -23,12 +23,13 @@ $bom_area_count = 0;
 
 while($i < $h) {
   if ($field_ary[$i][$n] == "#") {
-    foreach($field_ary as &$field) {
+    foreach($field_ary as &$field) { // 参照渡し
       if ($field[$n] == ".") {
         $field[$n] = "x";
         $bom_area_count += 1;
       }
     }
+    unset($field); // 参照渡しをしているため、変数を未定義の状態にする。参照渡しにより、foreachを抜けたあとも参照されているため。
     while($c < $w) {
       if ($field_ary[$i][$c] == ".") {
         $field_ary[$i][$c] = "x";
