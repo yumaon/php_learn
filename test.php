@@ -1,5 +1,5 @@
 <?php
     $num = 2;
     $count = 3;
-    echo $num * $count;
+    echo $num * $count + 1;
 ?>
