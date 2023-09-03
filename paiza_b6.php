@@ -48,6 +48,7 @@ while($i < $h) {
 
 echo $bom_area_count + $bomb_count."\n";
 
+// コメント
 // foreach($field_ary as $field) {
 //   echo implode(" ", $field)."\n";
 // }
